@@ -1,9 +1,9 @@
 def solve(list_numbers, k):
-    number_summed_equals_k = []
+    number_summed_equals_k = set()
     for number in list_numbers:
         if number in number_summed_equals_k:
             return True
-        number_summed_equals_k.append(k-number)
+        number_summed_equals_k.add(k-number)
     return False
 
 
